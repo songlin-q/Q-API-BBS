@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>E:\Asp.NetCore\Q.API\Q.API.Model.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

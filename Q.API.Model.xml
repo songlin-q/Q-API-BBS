@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Q.API.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Q.API.Model.Article">
+            <summary>
+            文章类
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Submitter">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Category">
+            <summary>
+            类别
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Traffic">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.CommentNum">
+            <summary>
+            评论数量
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.UpdateTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.Article.IsDeleted">
+            <summary>
+            是否删除(逻辑删除)
+            </summary>
+        </member>
+        <member name="T:Q.API.Model.TableModel`1">
+            <summary>
+            负责表数据
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TableModel`1.code">
+            <summary>
+            返回的编码
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TableModel`1.Msg">
+            <summary>
+            返回的信息
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TableModel`1.count">
+            <summary>
+            记录总数
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TableModel`1.Data">
+            <summary>
+            返回的结果
+            </summary>
+        </member>
+        <member name="T:Q.API.Model.TokenJwtModel">
+            <summary>
+            Jwtmodel
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TokenJwtModel.uID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TokenJwtModel.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.TokenJwtModel.department">
+            <summary>
+            职位
+            </summary>
+        </member>
+        <member name="T:Q.API.Model.User">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.User.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.User.name">
+            <summary>
+            名字
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.User.egg">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.User.sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="T:Q.API.Model.ViewModel.MessageModel`1">
+            <summary>
+            消息数据类
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.ViewModel.MessageModel`1.status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.ViewModel.MessageModel`1.success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.ViewModel.MessageModel`1.msg">
+            <summary>
+            返回的信息
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.ViewModel.MessageModel`1.response">
+            <summary>
+            消息集合
+            </summary>
+        </member>
+        <member name="T:Q.API.Model.WeatherForecast">
+            <summary>
+            天气预报
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.WeatherForecast.Date">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.WeatherForecast.TemperatureC">
+            <summary>
+            华摄氏度
+            </summary>
+        </member>
+        <member name="P:Q.API.Model.WeatherForecast.summarys">
+            <summary>
+            摘要
+            </summary>
+        </member>
+    </members>
+</doc>

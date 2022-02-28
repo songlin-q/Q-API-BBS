@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Q.API.IServices\Q.API.IServices.csproj" />
+    <ProjectReference Include="..\Q.Respostories\Q.API.Respostories.csproj" />
+  </ItemGroup>
+
+</Project>

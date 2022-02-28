@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Q.API</name>
+    </assembly>
+    <members>
+        <member name="T:Q.API.Controllers.ArticleController">
+            <summary>
+            文章接口
+            </summary>
+        </member>
+        <member name="M:Q.API.Controllers.ArticleController.Get(System.Int32)">
+            <summary>
+            根据ID查询文章信息
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Q.API.Controllers.CalculatController.get(System.Int32,System.Int32)">
+            <summary>
+            求和
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Q.API.Controllers.LoginController">
+            <summary>
+            登录接口
+            </summary>
+        </member>
+        <member name="M:Q.API.Controllers.LoginController.GetJwtst(System.String,System.String)">
+            <summary>
+            获取JWT令牌
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Q.API.Controllers.WeatherForecastController">
+            <summary>
+            天气预报
+            </summary>
+        </member>
+        <member name="M:Q.API.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{Q.API.Controllers.HomeController})">
+            <summary>
+            依赖注入
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Q.API.Controllers.WeatherForecastController.Calculatevalue(System.Int32,System.Int32)">
+            <summary>
+            加法属性
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Q.API.Controllers.WeatherForecastController.Get">
+            <summary>
+            获取天气
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
