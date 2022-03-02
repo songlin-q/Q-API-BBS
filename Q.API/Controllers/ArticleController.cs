@@ -3,6 +3,7 @@ using Q.API.IServices;
 using Q.API.Model;
 using Q.API.Services;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Q.API.Controllers
 {
@@ -19,10 +20,11 @@ namespace Q.API.Controllers
         /// <param name="Id"></param>
         /// <returns></returns>
         [HttpGet]
-        public List<Article> Get(int Id)
+        public async Task<List<Article>> Get(int Id)
         {
             IArticleService articleService = new ArticleService();
-            return articleService.Query(d => d.Id == Id);
+            return await articleService.GetListAsync(s => s.Id == Id);
+
         }
     }
 }
