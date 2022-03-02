@@ -15,7 +15,7 @@ namespace Q.API.Controllers
     public class ArticleController : ControllerBase
     {
         /// <summary>
-        /// 根据ID查询文章信息
+        /// 根据ID查询文章信息  
         /// </summary>
         /// <param name="Id"></param>  
         /// <returns></returns>
