@@ -17,7 +17,7 @@ namespace Q.API.Controllers
         /// <summary>
         /// 根据ID查询文章信息
         /// </summary>
-        /// <param name="Id"></param>
+        /// <param name="Id"></param>  
         /// <returns></returns>
         [HttpGet]
         public async Task<List<Article>> Get(int Id)
