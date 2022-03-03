@@ -1,4 +1,5 @@
 ﻿using Q.API.IRespostories;
+using Q.API.IRespostories.BASE;
 using Q.API.IServices;
 using Q.API.Model;
 using Q.API.Respostories;
@@ -14,6 +15,9 @@ namespace Q.API.Services
 {
     public class ArticleService : BaseService<Article>, IArticleService
     {
-       
+        public ArticleService(IBaseRespostory<Article> baseRespository) : base(baseRespository)//依赖注入
+        { 
+        
+        }
     }
 }

@@ -14,6 +14,15 @@ namespace Q.API.Controllers
     [ApiController]
     public class ArticleController : ControllerBase
     {
+        private readonly IArticleService _articleService;
+        /// <summary>
+        /// 依赖注入
+        /// </summary>
+        /// <param name="articleService"></param>
+        public ArticleController(IArticleService articleService)
+        { 
+           this._articleService=articleService;
+        }
         /// <summary>
         /// 根据ID查询文章信息  
         /// </summary>
@@ -22,8 +31,8 @@ namespace Q.API.Controllers
         [HttpGet]
         public async Task<List<Article>> Get(int Id)
         {
-            IArticleService articleService = new ArticleService();
-            return await articleService.GetListAsync(s => s.Id == Id);
+            
+            return await _articleService.GetListAsync(s => s.Id == Id);
 
         }
     }

@@ -19,8 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Q.API.Coom\Q.API.Coom.csproj" />
+    <ProjectReference Include="..\Q.API.Extensions\Q.API.Extensions.csproj" />
     <ProjectReference Include="..\Q.API.Model\Q.API.Model.csproj" />
-    <ProjectReference Include="..\Q.API.Services\Q.API.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,3 +1,4 @@
+using Autofac;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -8,7 +9,12 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Q.API.Coom;
+using Q.API.Extensions.ServiceExtensons;
+using Q.API.IRespostories.BASE;
+using Q.API.IServices;
+using Q.API.Respostories.BASE;
 using Q.API.Respostories.EfContext;
+using Q.API.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.Collections.Generic;
@@ -28,7 +34,7 @@ namespace Q.API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // 配置服务
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -63,6 +69,12 @@ namespace Q.API
             //依赖注入 Appsettings方法
             services.AddControllers();
             services.AddSingleton(new AppSettings(Configuration));//单例模注入
+
+            #region 依赖注入
+            services.AddScoped<IArticleService, ArticleService>();
+            services.AddScoped(typeof(IBaseRespostory<>),typeof(BaseRespostory<>));//泛型的依赖注入
+            #endregion
+
 
 
             #region jwt进行认证授权
@@ -136,7 +148,13 @@ namespace Q.API
             #endregion
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        //配置容器
+        public void ConfigureContainer(ContainerBuilder containerBulider)
+        {
+            containerBulider.RegisterModule<AutoFacModuleRegister>();
+        }
+
+        //配置中间就爱你
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -174,5 +192,7 @@ namespace Q.API
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
+
     }
 }

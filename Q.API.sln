@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q.API.Services", "Q.API.Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q.API.Model", "Q.API.Model\Q.API.Model.csproj", "{C8E07576-A50C-455A-A590-18404DC8F361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q.API.Coom", "Q.API.Coom\Q.API.Coom.csproj", "{6DCA3C08-1621-4125-94C1-764B99A91D52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q.API.Coom", "Q.API.Coom\Q.API.Coom.csproj", "{6DCA3C08-1621-4125-94C1-764B99A91D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q.API.Extensions", "Q.API.Extensions\Q.API.Extensions.csproj", "{FF92E2B4-38D4-4C78-9D1D-90A8594E3B7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{6DCA3C08-1621-4125-94C1-764B99A91D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DCA3C08-1621-4125-94C1-764B99A91D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DCA3C08-1621-4125-94C1-764B99A91D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF92E2B4-38D4-4C78-9D1D-90A8594E3B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF92E2B4-38D4-4C78-9D1D-90A8594E3B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF92E2B4-38D4-4C78-9D1D-90A8594E3B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF92E2B4-38D4-4C78-9D1D-90A8594E3B7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
